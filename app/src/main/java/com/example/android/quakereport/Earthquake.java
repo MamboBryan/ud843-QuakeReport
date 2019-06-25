@@ -11,10 +11,18 @@ public class Earthquake {
     //This is the variable name for the earthquake date
     private long mTimeInMilliseconds;
 
-    public Earthquake(double magnitude, String location, long date) {
+    //This is a string for the URl of the earthquake
+    private String mEarthquakeURL;
+
+    public Earthquake(double magnitude, String location, long date, String url) {
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = date;
+        mEarthquakeURL = url;
+    }
+
+    public String getEarthquakeURL() {
+        return mEarthquakeURL;
     }
 
     public double getMagnitude() {
